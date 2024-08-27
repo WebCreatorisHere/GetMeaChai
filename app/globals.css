@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.bg-gradient-to-b {
+  background: linear-gradient(to bottom, var(--tw-gradient-stops));
+}
+.from-darkblue {
+  --tw-gradient-from: #002244;
+}
+.to-darkblue-light {
+  --tw-gradient-to: #003366;
+}
+
+@media (max-width: 400px) {
+  .media-2-out{
+    display: none;
+  }
+}
