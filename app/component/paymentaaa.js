@@ -11,7 +11,7 @@ import { useSearchParams } from 'next/navigation.js';
 import { useSession, signIn, signOut } from "next-auth/react"
 
 
-const payment = ({ USERNAME }) => {
+const PAYMENT = ({ USERNAME }) => {
   const [payform, setpayform] = useState({ name: "", message: "", amount: "" })
   const [curruser, setcurruser] = useState({})
   const [payments, setpayments] = useState([])
@@ -164,4 +164,4 @@ const payment = ({ USERNAME }) => {
   )
 }
 
-export default payment
+export default PAYMENT

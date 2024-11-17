@@ -7,7 +7,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { Bounce } from 'react-toastify'
 
-const Dashboard = () => {
+const DASHBOARD = () => {
   const { data: session } = useSession()
   const router = useRouter()
   const [form, setform] = useState({})
@@ -122,4 +122,4 @@ theme="light"
   )
 }
 
-export default Dashboard
+export default DASHBOARD

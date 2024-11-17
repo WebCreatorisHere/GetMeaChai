@@ -1,5 +1,5 @@
 import Link from "next/link"
-export default function Home() {
+export default function HOME() {
   return (
     <>
       <div className="flex justify-center flex-col text-center gap-4 text-white md:h-[55vh] items-center px-6 md:px-0 h-[45vh]">

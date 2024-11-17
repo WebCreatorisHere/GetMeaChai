@@ -1,7 +1,7 @@
 // pages/about.js
 import Head from 'next/head';
 
-const About = () => {
+const ABOUT = () => {
   return (
     <>
       <Head>
@@ -56,7 +56,7 @@ const About = () => {
   );
 };
 
-export default About;
+export default ABOUT;
 export const metadata = {
   title:"About - Get Me a Chai"
 }

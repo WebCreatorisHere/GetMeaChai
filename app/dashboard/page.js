@@ -1,12 +1,12 @@
 import Dashboard from '../component/Dashboard.js'
 
-const dashboardpage = () => {
+const DASHBOARDPAGE = () => {
   return(
   <Dashboard/>
 )
 }
 
-export default dashboardpage
+export default DASHBOARDPAGE
 export const metadata = {
   title:"Dashboard - Get Me a Chai"
 }
