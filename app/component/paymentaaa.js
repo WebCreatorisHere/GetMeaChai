@@ -63,7 +63,7 @@ const payment = ({ USERNAME }) => {
       "description": "Test Transaction",
       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/LEGO_logo.svg/2048px-LEGO_logo.svg.png",
       "order_id": orderId, //This is a sample Order ID. Pass the `id` obtained in the response of Step 1
-      "callback_url": `${process.env.NEXT_PUBLIC_URL}/razorpay`,
+      "callback_url": `${process.env.NEXT_PUBLIC_URL}/cpi/razorpay`,
       "prefill": { //We recommend using the prefill parameter to auto-fill customer's contact information especially their phone number
         "name": "Yash Dwivedi", //your customer's name
         "email": "yashthecool2000.com",
