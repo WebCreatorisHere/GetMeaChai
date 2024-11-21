@@ -50,8 +50,8 @@ const PAGE = () => {
 </button>
 
 
-<button
-    className=" w-[270px] flex items-center bg-white border border-gray-300 rounded-lg shadow-md max-w-xs px-6 py-2 text-sm font-medium text-gray-800 hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500">
+<button disabled
+    className="disabled:bg-slate-500 w-[270px] flex items-center bg-white border border-gray-300 rounded-lg shadow-md max-w-xs px-6 py-2 text-sm font-medium text-gray-800 hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500">
     <svg className="h-6 w-6 mr-2" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink"
         viewBox="0 -2 44 44" version="1.1">
         <g id="Icons" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
@@ -67,8 +67,8 @@ const PAGE = () => {
 </button>
 
 
-<button
-    className=" w-[270px] flex items-center bg-white border border-gray-300 rounded-lg shadow-md max-w-xs px-6 py-2 text-sm font-medium text-gray-800 hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500">
+<button disabled
+    className="disabled:bg-slate-500 w-[270px] flex items-center bg-white border border-gray-300 rounded-lg shadow-md max-w-xs px-6 py-2 text-sm font-medium text-gray-800 hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500">
     <svg className="h-6 w-6 mr-2" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink"
         viewBox="0 -4 48 48" version="1.1">
         <g id="Icons" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
@@ -86,8 +86,8 @@ const PAGE = () => {
 </button>
 
 
-<button
-    className=" w-[270px] flex items-center bg-white border border-gray-300 rounded-lg shadow-md max-w-xs px-6 py-2 text-sm font-medium text-gray-800 hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500">
+<button disabled
+    className="disabled:bg-slate-500 w-[270px] flex items-center bg-white border border-gray-300 rounded-lg shadow-md max-w-xs px-6 py-2 text-sm font-medium text-gray-800 hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500">
     <svg className="h-6 w-6 mr-2" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink"
         viewBox="0 0 48 48" version="1.1">
         <g id="Icons" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
@@ -129,8 +129,8 @@ const PAGE = () => {
 </button>
 
 
-<button
-    className=" w-[270px] flex items-center bg-white border border-gray-300 rounded-lg shadow-md max-w-xs px-6 py-2 text-sm font-medium text-gray-800 hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500">
+<button disabled
+    className="disabled:bg-slate-500 w-[270px] flex items-center bg-white border border-gray-300 rounded-lg shadow-md max-w-xs px-6 py-2 text-sm font-medium text-gray-800 hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500">
     <svg className="h-6 w-6 mr-2" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink"
         viewBox="-1.5 0 20 20" version="1.1">
         <g id="Page-1" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">

@@ -2,10 +2,10 @@ import Link from "next/link"
 export default function HOME() {
   return (
     <>
-      <div className="flex justify-center flex-col text-center gap-4 text-white md:h-[55vh] items-center px-6 md:px-0 h-[45vh]">
-        <div className="font-bold flex md:gap-6 gap-2 items-center text-3xl md:text-5xl">Get Me a Chai <span><img className="md:w-[5rem] w-[4rem] mb-4" src="/tea.gif" alt="" /></span></div>
+      <div className="flex justify-center flex-col text-center gap-8 text-white md:h-[90vh] items-center px-6 md:px-0 h-[90vh]">
+        <div className="font-bold flex md:gap-6 gap-2 items-center text-3xl md:text-6xl bg-white bg-clip-text text-transparent bg-[radial-gradient(100%_100%_at_top_left,white,rgb(74,32,138,.5))]">Get Me a Chai <span><img className="md:w-[5rem] w-[4rem] mb-4" src="/tea.gif" alt="" /></span></div>
 
-        <p className="mt-[-10px] text-center">
+        <p className="mt-[-10px] text-center text-xl font-bold ">
           A crowdfunding platform for creators. Get funded by your fans and followers. Start now!
         </p>
         <div>
