@@ -104,14 +104,14 @@ theme="light"
         <div className="flex gap-1 flex-col"><label className='font-bold' htmlFor="razid">
           Razorpay Id
         </label>
-          <input onChange={handlechange} value={form.razid ? form.razid : ""} className='w-full p-3 bg-slate-800 rounded-lg text-white' type="text" id='razid' name='razid' />
+          <input disabled onChange={handlechange} value={process.env.NEXT_PUBLIC_KEY_ID} className='w-full p-3 bg-slate-800 rounded-lg text-white' type="text" id='razid' name='razid' />
         </div>
 
 
         <div className="flex gap-1 flex-col"><label className='font-bold' htmlFor="razsec">
           Razorpay Secret
         </label>
-          <input onChange={handlechange} value={form.razsec ? form.razsec : ""} className='w-full p-3 bg-slate-800 rounded-lg text-white' type="text" id='razsec' name='razsec' />
+          <input disabled onChange={handlechange} value={process.env.NEXT_PUBLIC_KEY_SECRET} className='w-full p-3 bg-slate-800 rounded-lg text-white' type="password" id='razsec' name='razsec' />
         </div>
 
 
