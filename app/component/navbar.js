@@ -31,7 +31,9 @@ const NAVBAR = () => {
                 <Link href={`/${session.user.name}`} className="block px-4 py-2 hover:bg-gray-600 dark:hover:bg-gray-600 dark:hover:text-white">Your page</Link>
               </li>
 
-              <li onClick={() => { signOut() }}>
+              <li onClick={() => { signOut({
+  callbackUrl: window.location.origin, // Optional: Redirect to the homepage after logout
+}); }}>
                 <Link href="#" className="block px-4 py-2 hover:bg-gray-600 dark:hover:bg-gray-600 dark:hover:text-white">Sign out</Link>
               </li>
             </ul>
@@ -39,7 +41,9 @@ const NAVBAR = () => {
         </>}
 
         {session &&
-          <button onClick={() => { signOut() }} className='text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center media-2-out'>Logout</button>
+          <button onClick={() => { signOut({
+            callbackUrl: window.location.origin, // Optional: Redirect to the homepage after logout
+          }); }} className='text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center media-2-out'>Logout</button>
         }
 
         {!session && <Link href={"/login"}>
