@@ -37,7 +37,7 @@ console.log(xx)
 
         const updatedpayment = await Payment.findOneAndUpdate({ oid: body.razorpay_order_id }, { done: "true" }, { new: true })
         console.log(currentUrl)
-      return NextResponse.redirect(`${currentUrl}/`)
+      return NextResponse.redirect(`${currentUrl}/${saveduser.username}`)
 
     }
     else {
