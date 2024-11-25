@@ -1,10 +1,11 @@
 import Link from "next/link"
+import Image from "next/image"
 
 export default function HOME() {
   return (
     <>
       <div className="flex justify-center flex-col text-center gap-8 text-white md:h-[90vh] items-center px-6 md:px-0 h-[90vh]">
-        <div className="font-bold flex md:gap-6 gap-2 items-center text-3xl md:text-6xl bg-white bg-clip-text text-transparent bg-[radial-gradient(100%_100%_at_top_left,white,rgb(74,32,138,.5))]">Get Me a Chai <span><img className="md:w-[5rem] w-[4rem] mb-4" src="/tea.gif" alt="" /></span></div>
+        <div className="font-bold flex md:gap-6 gap-2 items-center text-3xl md:text-6xl bg-white bg-clip-text text-transparent bg-[radial-gradient(100%_100%_at_top_left,white,rgb(74,32,138,.5))]">Get Me a Chai <span><Image unoptimized={true} loading="lazy" className="md:w-[5rem] w-[4rem] mb-4" src="/tea.gif" alt="" /></span></div>
 
         <p className="mt-[-10px] text-center text-xl font-bold ">
           A crowdfunding platform for creators. Get funded by your fans and followers. Start now!
@@ -28,17 +29,17 @@ export default function HOME() {
         <h1 className="md:text-3xl max-md:px-10 text-2xl font-bold text-center mb-14">Your Fans can buy you a Chai.</h1>
         <div className="flex md:gap-5 gap-7 justify-around max-md:flex-col">
           <div className="item space-y-3 flex flex-col justify-center items-center">
-            <img className="w-28 bg-slate-400 px-3.5 rounded-full flex flex-col justify-center items-center" src="man.gif" alt="" />
+            <Image unoptimized={true} loading="lazy" className="w-28 bg-slate-400 px-3.5 rounded-full flex flex-col justify-center items-center" src="man.gif" alt="" />
             <div className="text space-y-1 text-center"><p className=" text-white font-bold">Fans want to help</p>
               <p className=" text-white text-center">Your fans are available for you to help you</p>
             </div>        </div>
           <div className="item space-y-3 flex flex-col justify-center items-center">
-            <img className="w-28 bg-slate-400 p-3 rounded-full flex flex-col justify-center items-center" src="coin.gif" alt="" />
+            <Image unoptimized={true} loading="lazy" className="w-28 bg-slate-400 p-3 rounded-full flex flex-col justify-center items-center" src="coin.gif" alt="" />
             <div className="text space-y-1 text-center"><p className=" text-white font-bold">Fans want to help</p>
               <p className=" text-white text-center">Your fans are available for you to help you</p>
             </div>        </div>
           <div className="item space-y-3 flex justify-center items-center flex-col">
-            <img className="w-28 p-2 py-3 bg-slate-400 rounded-full flex flex-col justify-center items-center" src="donate.gif" alt="" />
+            <Image unoptimized={true} loading="lazy" className="w-28 p-2 py-3 bg-slate-400 rounded-full flex flex-col justify-center items-center" src="donate.gif" alt="" />
             <div className="text space-y-1 text-center"><p className=" text-white font-bold">Fans want to help</p>
               <p className=" text-white text-center">Your fans are available for you to help you</p>
             </div> </div>

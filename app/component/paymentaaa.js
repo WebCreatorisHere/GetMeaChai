@@ -1,6 +1,7 @@
 "use client"
 import React, { useState, useEffect } from 'react'
 import Script from 'next/script'
+import Image from 'next/image.js'
 import { fetchpayments, initiate, fetchuser } from '../actions/ussseraction.js'
 import { v4 as uuidv4 } from 'uuid';
 import { useRouter } from 'next/navigation.js';
@@ -111,8 +112,8 @@ const PAYMENT = ({ USERNAME }) => {
       <Script src={"https://checkout.razorpay.com/v1/checkout.js"}></Script>
 
       <div className='cover bg-red-50 relative'>
-        <div className="cover h-[337px] w-full max-sm:h-[200px]"><img className='w-full h-full' src={curruser.coverpic} alt="" /></div>
-        <div className='db h-[97px] w-[100px] sm:w-[106px] sm:h-[106px] top-[75%] right-[36%] absolute sm:top-[83%] sm:right-[47%]'><img className='rounded-full h-full outline outline-[0.5px] outline-[#43413F]' src={curruser.profilepic} alt="" /></div>
+        <div className="cover h-[337px] w-full max-sm:h-[200px]"><Image unoptimized={true} loading="lazy" className='w-full h-full' src={curruser.coverpic} alt="" /></div>
+        <div className='db h-[97px] w-[100px] sm:w-[106px] sm:h-[106px] top-[75%] right-[36%] absolute sm:top-[83%] sm:right-[47%]'><Image unoptimized={true} loading="lazy" className='rounded-full h-full outline outline-[0.5px] outline-[#43413F]' src={curruser.profilepic} alt="" /></div>
       </div>
       <div className="info flex flex-col items-center gap-2 my-[4.5rem]">
         <div className='font-bold text-lg'>
@@ -134,7 +135,7 @@ const PAYMENT = ({ USERNAME }) => {
               {payments.length == 0 && <div>No payments yet!!</div>}
               {payments.map((e) => {
                 return <li className='my-1.5 flex gap-2 items-center' key={uuidv4()}>
-                  <img className='w-7 rounded-full' src="avater.gif" alt="" />
+                  <Image unoptimized={true} loading="lazy" className='w-7 rounded-full' src="avater.gif" alt="" />
                   <span className=''>{e.name} donated <span className='font-bold'>₹{e.amount} </span><span>with a message "{e.message}"</span>
                   </span></li>
               })}
