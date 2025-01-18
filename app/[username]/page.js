@@ -8,7 +8,8 @@ const PAGE = async ({ params }) => {
   // if the username is not found in the database show not found page
   const checkuser = async () => {
     await connectDB()
-    let p = await user.findOne({ username: params.username })
+    var oriparams = await params
+    let p = await user.findOne({ username: oriparams.username })
     if (!p) {
       return notFound()
     }
@@ -24,7 +25,8 @@ const PAGE = async ({ params }) => {
 export default PAGE
 
 export async function generateMetadata({ params }) {
+  let oriparams = await params
   return {
-    title:  `${params.username} - Get Me a Chai`
+    title:  `${oriparams.username} - Get Me a Chai`
   }
 }
