@@ -10,7 +10,7 @@ const NAVBAR = () => {
 
   return (
     <nav className='bg-gray-900 flex justify-between text-white px-10 items-center max-md:pb-4 max-md:flex-col md:h-16'>
-      <Link href={"/"}><div className="logo text-xl font-bold flex justify-center items-center"><Image unoptimized={true} loading="lazy" className='mb-[1.15rem] w-16' src="tea.gif" alt="" /><span>GetMeaChai!</span></div></Link>
+      <Link href={"/"}><div className="logo text-xl font-bold flex justify-center items-center"><img loading="lazy" className='mb-[1.15rem] w-16' src="tea.gif" alt="tea" /><span>GetMeaChai!</span></div></Link>
      
       <div className=' space-x-3 relative'>
         {session && <>
