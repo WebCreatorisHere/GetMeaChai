@@ -3,8 +3,8 @@ import "./globals.css";
 import Navbar from "@/app/component/navbar"
 import Footer from "@/app/component/footer"
 import Sessionwrapperr from "./component/sessionwrapper";
-import { Suspense } from "react";
-import Script from "next/script";
+import { GoogleAnalytics } from '@next/third-parties/google'
+
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,18 +16,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <head>
-        <Script strategy="afterInteractive" src="https://www.googletagmanager.com/gtag/js?id=G-NWF08B7ERH" />
-        <Script id="google-analytics" strategy="afterInteractive"
-        >
-
-          {`window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-NWF08B7ERH');`}
-        </Script>
-      </head>
+      
       <body className={` bg-[#000000] bg-[radial-gradient(#ffffff33_1px,#00091d_1px)] bg-[size:20px_20px]`}>
         <Sessionwrapperr>
           <Navbar />
@@ -36,7 +25,9 @@ export default function RootLayout({ children }) {
           </div>
           <Footer />
         </Sessionwrapperr>
+
       </body>
+<GoogleAnalytics gaId="G-NWF08B7ERH" />
     </html>
   );
 }
