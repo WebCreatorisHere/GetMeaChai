@@ -15,6 +15,8 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+      <meta name="google-site-verification" content="IJZRK9vE98r2pXikqlCaHSzRewt4cdj1gytbpadM70A" />
       <Script strategy="afterInteractive" src="https://www.googletagmanager.com/gtag/js?id=G-NWF08B7ERH" />
       <Script
   id="google-analytics"
@@ -26,6 +28,7 @@ export default function RootLayout({ children }) {
   gtag('config', 'G-NWF08B7ERH');`,
   }}
 />
+</head>
       <body className={` bg-[#000000] bg-[radial-gradient(#ffffff33_1px,#00091d_1px)] bg-[size:20px_20px]`}>
         <Sessionwrapperr>
           <Navbar />
